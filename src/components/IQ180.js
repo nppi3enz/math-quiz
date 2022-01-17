@@ -34,7 +34,7 @@ const IQ180 = () => {
   const newGame = () => {
     let randomList = []
     for(let i=1;i<=5;i++) {
-      let temp = Math.floor(Math.random() * 10);
+      let temp = Math.floor(Math.random() * 9)+1;
       randomList[i] = temp
     }
     let answer = getRandomArbitrary(10,999)
