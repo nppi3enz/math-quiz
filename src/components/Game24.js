@@ -30,7 +30,7 @@ const Game24 = () => {
         randomList[i] = temp
       }
       ind = expect.indexOf(game[0]*1000 + game[1]*100 + game[2]*10 + game[3]);
-    } while(ind > 0);
+    } while(ind >= 0);
     
     setGame(randomList)
   }
