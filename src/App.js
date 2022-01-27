@@ -3,6 +3,7 @@ import { useState } from "react";
 import Game24 from './components/Game24';
 import IQ180 from './components/IQ180';
 import styled from 'styled-components';
+import MetaTags from 'react-meta-tags';
 const Game = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,6 +24,9 @@ function App() {
   const [state, setState] = useState('game24')
   return (
     <div className="App">
+      <MetaTags>
+        <meta name="google-site-verification" content="UkvA7XOnzg57YMQ-gUXgrjyt6YbkhmWmnOZwB1FF10A" />
+      </MetaTags>
       <Game>
         { state === 'game24' && <Game24 /> }
         { state === 'iq180' && <IQ180 /> }
